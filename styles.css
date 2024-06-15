@@ -1,9 +1,16 @@
+:root {
+    --orange: #e68910;
+    --grey: #948f8f;
+    --grey-hover: #c7c6c3;
+    --darkgrey: #363434;
+    --darkgrey-hover: #474643;
+}
+
 body {
     color: white;
 }
 
-
-.wrapperCalc {
+.wrapper-calc {
     display: block;
     margin: 0 auto;
     padding: 10px;
@@ -12,17 +19,17 @@ body {
     border-radius: 20px;
 }
 
-.numbWindow {
+.display-window {
     margin: 0;
     padding-top: 80px;
     padding-bottom: 10px;
     width: 100%;
     text-align: right;
     font-size: 50px;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-.wrapperTable {
+.wrapper-table {
     padding: 5px 0;  
 }
 
@@ -37,37 +44,37 @@ body {
     width: 70px;
     border: none;
     border-radius: 50%;
-    background-color: #363434;
+    background-color: var(--darkgrey);
     color: white;
     font-size: 35px;
     transition: all 0.5s ease;
+    cursor: pointer;
 }
 
 .btn-darkgrey-style:hover {
-    background-color: #474643;
+    background-color: var(--darkgrey-hover);
 }
-
 
 .btn-grey-style {
     color: black;
-    background-color: #948f8f;
+    background-color: var(--grey);
     transition: all 0.5s ease;
 }
 
 .btn-grey-style:hover {
-    background-color: #c7c6c3;
-
+    background-color: var(--grey-hover);
 }
 
 .btn-orange-style {
-    background-color: #e68910;
+    background-color: var(--orange);
 }
 
 .btn-orange-style:focus {
-    color: #e68910;
+    color: var(--orange);
     background-color: white;
 
 }
+
 .zero-style {
     padding-left: 10%;
     width: 140px;
